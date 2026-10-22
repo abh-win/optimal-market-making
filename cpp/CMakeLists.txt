@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.20)
+project(mm_backtester CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+add_compile_options(-Wall -Wextra -Wpedantic)
+
+add_library(mm src/data.cpp src/engine.cpp src/rl.cpp src/signals.cpp src/strategies.cpp)
+target_include_directories(mm PUBLIC include)
+
+foreach(tool mm_backtest mm_train_rl mm_dump_signals)
+  add_executable(${tool} tools/${tool}.cpp)
+  target_link_libraries(${tool} PRIVATE mm)
+endforeach()
+
+find_package(GTest)
+if(GTest_FOUND)
+  enable_testing()
+  add_executable(mm_tests tests/engine_test.cpp tests/strategy_test.cpp)
+  target_link_libraries(mm_tests PRIVATE mm GTest::gtest_main)
+  include(GoogleTest)
+  gtest_discover_tests(mm_tests)
+endif()
