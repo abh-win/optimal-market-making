@@ -1,0 +1,7 @@
+.venv/
+data/
+build*/
+__pycache__/
+*.egg-info/
+compile_commands.json
+results/**/*.parquet
