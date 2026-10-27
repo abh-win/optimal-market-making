@@ -1,0 +1,84 @@
+
+=== DOGEUSDT: 13.85 h recorded, tick 1e-05, 394333 snapshots, 461634 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.077          -0.218       -0.43         -0.048     -1.247         -6.784       -0.393        0.323
+      1       0.855           0.004        0.00          0.000      0.000          0.000        0.000        0.820
+      2       0.069           0.185        0.43          0.048      1.247          6.784        0.393        0.323
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0       -0.006         0.665                    0.330      9380
+      1        0.365         0.560                    0.462     75716
+      2        0.836        -0.154                    0.341      8304
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -0.1467  0.0567  0.0483  0.0270  0.0163           0.0222
+HMM micro-price (filtered regime) -0.1467  0.0567  0.0483  0.0270  0.0163           0.0222
+Stoikov micro-price               -0.1278  0.0571  0.0476  0.0264  0.0159           0.0214
+linear L1-L5 imbalance (10s OLS)  -0.4756  0.0378  0.0502  0.0308  0.0190           0.0361
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                      -0.0716  0.0570  0.0450  0.0241  0.0143           0.0214
+fill intensity A=0.153/s k=0.806/tick, sigma=0.900 ticks/sqrt(s)
+
+=== ADAUSDT: 13.85 h recorded, tick 0.0001, 381087 snapshots, 210517 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.043          -0.010      -0.023          0.075     -0.259         -2.827        -0.75        0.327
+      1       0.913          -0.002       0.000          0.000      0.000          0.000         0.00        0.856
+      2       0.043           0.019       0.023         -0.075      0.259          2.827         0.75        0.327
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0       -0.194        -0.077                   -0.135      2167
+      1        0.022         0.032                    0.027     44092
+      2       -0.040         0.003                   -0.019      2897
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -1.2601  0.0090  0.0787  0.0507  0.0337           0.0733
+HMM micro-price (filtered regime) -1.2599  0.0090  0.0788  0.0507  0.0337           0.0733
+Stoikov micro-price               -1.2392  0.0106  0.0789  0.0505  0.0333           0.0736
+linear L1-L5 imbalance (10s OLS)  -0.9821  0.0412  0.0879  0.0557  0.0368           0.0758
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                      -0.9264  0.0450  0.0878  0.0550  0.0360           0.0763
+fill intensity A=0.044/s k=1.229/tick, sigma=0.309 ticks/sqrt(s)
+
+=== XRPUSDT: 13.85 h recorded, tick 0.0001, 454682 snapshots, 648101 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.074          -0.306      -0.396         -0.111     -1.893         -6.565       -0.439        0.413
+      1       0.853           0.001       0.000          0.000      0.000          0.000        0.000        0.797
+      2       0.073           0.289       0.396          0.111      1.893          6.565        0.439        0.413
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0       -0.194         0.910                    0.358     12582
+      1        0.585         0.811                    0.698    105896
+      2        0.953         0.250                    0.601     13158
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -0.0158  0.0418  0.0335  0.0202  0.0103           0.0100
+HMM micro-price (filtered regime) -0.0157  0.0418  0.0335  0.0202  0.0103           0.0100
+Stoikov micro-price               -0.0129  0.0415  0.0332  0.0199  0.0102           0.0099
+linear L1-L5 imbalance (10s OLS)  -0.3142  0.0387  0.0472  0.0324  0.0164           0.0150
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                       0.0009  0.0420  0.0321  0.0191  0.0098           0.0074
+fill intensity A=0.179/s k=0.654/tick, sigma=1.245 ticks/sqrt(s)
+
+=== TRXUSDT: 13.85 h recorded, tick 1e-05, 231518 snapshots, 71964 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.042          -0.087      -0.526          -0.23      -0.36          -0.79       -0.272        0.442
+      1       0.901           0.003       0.000           0.00       0.00           0.00        0.000        0.868
+      2       0.057           0.064       0.526           0.23       0.36           0.79        0.272        0.442
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0        1.503         0.475                    0.989      1504
+      1        0.927         0.540                    0.733     16631
+      2        0.442         4.158                    2.300      1755
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -0.3312 -0.0311 -0.0031  0.0099  0.0075           0.0307
+HMM micro-price (filtered regime) -0.3311 -0.0311 -0.0031  0.0100  0.0075           0.0307
+Stoikov micro-price               -0.3151 -0.0288 -0.0022  0.0100  0.0075           0.0302
+linear L1-L5 imbalance (10s OLS)  -0.4046 -0.0430 -0.0061  0.0121  0.0112           0.0299
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                      -0.3240 -0.0291 -0.0014  0.0115  0.0095           0.0318
+fill intensity A=0.023/s k=0.527/tick, sigma=0.551 ticks/sqrt(s)
