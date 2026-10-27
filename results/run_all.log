@@ -1,0 +1,352 @@
+
+=== DOGEUSDT: 13.85 h recorded, tick 1e-05, 394333 snapshots, 461634 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.077          -0.218       -0.43         -0.048     -1.247         -6.784       -0.393        0.323
+      1       0.855           0.004        0.00          0.000      0.000          0.000        0.000        0.820
+      2       0.069           0.185        0.43          0.048      1.247          6.784        0.393        0.323
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0       -0.006         0.665                    0.330      9380
+      1        0.365         0.560                    0.462     75716
+      2        0.836        -0.154                    0.341      8304
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -0.1467  0.0567  0.0483  0.0270  0.0163           0.0222
+HMM micro-price (filtered regime) -0.1467  0.0567  0.0483  0.0270  0.0163           0.0222
+Stoikov micro-price               -0.1278  0.0571  0.0476  0.0264  0.0159           0.0214
+linear L1-L5 imbalance (10s OLS)  -0.4756  0.0378  0.0502  0.0308  0.0190           0.0361
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                      -0.0716  0.0570  0.0450  0.0241  0.0143           0.0214
+fill intensity A=0.153/s k=0.806/tick, sigma=0.900 ticks/sqrt(s)
+
+=== ADAUSDT: 13.85 h recorded, tick 0.0001, 381087 snapshots, 210517 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.043          -0.010      -0.023          0.075     -0.259         -2.827        -0.75        0.327
+      1       0.913          -0.002       0.000          0.000      0.000          0.000         0.00        0.856
+      2       0.043           0.019       0.023         -0.075      0.259          2.827         0.75        0.327
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0       -0.194        -0.077                   -0.135      2167
+      1        0.022         0.032                    0.027     44092
+      2       -0.040         0.003                   -0.019      2897
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -1.2601  0.0090  0.0787  0.0507  0.0337           0.0733
+HMM micro-price (filtered regime) -1.2599  0.0090  0.0788  0.0507  0.0337           0.0733
+Stoikov micro-price               -1.2392  0.0106  0.0789  0.0505  0.0333           0.0736
+linear L1-L5 imbalance (10s OLS)  -0.9821  0.0412  0.0879  0.0557  0.0368           0.0758
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                      -0.9264  0.0450  0.0878  0.0550  0.0360           0.0763
+fill intensity A=0.044/s k=1.229/tick, sigma=0.309 ticks/sqrt(s)
+
+=== XRPUSDT: 13.85 h recorded, tick 0.0001, 454682 snapshots, 648101 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.074          -0.306      -0.396         -0.111     -1.893         -6.565       -0.439        0.413
+      1       0.853           0.001       0.000          0.000      0.000          0.000        0.000        0.797
+      2       0.073           0.289       0.396          0.111      1.893          6.565        0.439        0.413
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0       -0.194         0.910                    0.358     12582
+      1        0.585         0.811                    0.698    105896
+      2        0.953         0.250                    0.601     13158
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -0.0158  0.0418  0.0335  0.0202  0.0103           0.0100
+HMM micro-price (filtered regime) -0.0157  0.0418  0.0335  0.0202  0.0103           0.0100
+Stoikov micro-price               -0.0129  0.0415  0.0332  0.0199  0.0102           0.0099
+linear L1-L5 imbalance (10s OLS)  -0.3142  0.0387  0.0472  0.0324  0.0164           0.0150
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                       0.0009  0.0420  0.0321  0.0191  0.0098           0.0074
+fill intensity A=0.179/s k=0.654/tick, sigma=1.245 ticks/sqrt(s)
+
+=== TRXUSDT: 13.85 h recorded, tick 1e-05, 231518 snapshots, 71964 trades
+ regime  share_test  drift_1s_ticks  mean_imb1c  mean_imb_deep  mean_ofi1  mean_ofi_deep  mean_tflow5  persistence
+      0       0.042          -0.087      -0.526          -0.23      -0.36          -0.79       -0.272        0.442
+      1       0.901           0.003       0.000           0.00       0.00           0.00        0.000        0.868
+      2       0.057           0.064       0.526           0.23       0.36           0.79        0.272        0.442
+adverse selection (test): 10s aggressor-signed impact by regime; AS = mean of buy/sell impacts (ticks)
+ regime  impact_buys  impact_sells  adverse_selection_ticks  n_trades
+      0        1.503         0.475                    0.989      1504
+      1        0.927         0.540                    0.733     16631
+      2        0.442         4.158                    2.300      1755
+out-of-sample skill vs mid (1 - MSE/MSE_mid) by horizon (s):
+horizon_s                               1       5      10      30      60  next mid change
+model                                                                                     
+HMM micro-price (argmax regime)   -0.3312 -0.0311 -0.0031  0.0099  0.0075           0.0307
+HMM micro-price (filtered regime) -0.3311 -0.0311 -0.0031  0.0100  0.0075           0.0307
+Stoikov micro-price               -0.3151 -0.0288 -0.0022  0.0100  0.0075           0.0302
+linear L1-L5 imbalance (10s OLS)  -0.4046 -0.0430 -0.0061  0.0121  0.0112           0.0299
+mid                                0.0000  0.0000  0.0000  0.0000  0.0000           0.0000
+weighted mid                      -0.3240 -0.0291 -0.0014  0.0115  0.0095           0.0318
+fill intensity A=0.023/s k=0.527/tick, sigma=0.551 ticks/sqrt(s)
+episode   200  eps 0.277  mean reward/ep    -563.7  mean PnL/ep   -1.165  coverage 49.9%
+episode   400  eps 0.253  mean reward/ep    -452.9  mean PnL/ep   -1.096  coverage 50.1%
+episode   600  eps 0.230  mean reward/ep    -545.8  mean PnL/ep   -1.593  coverage 50.1%
+episode   800  eps 0.207  mean reward/ep    -553.4  mean PnL/ep   -1.938  coverage 50.1%
+episode  1000  eps 0.183  mean reward/ep    -452.2  mean PnL/ep   -1.502  coverage 50.1%
+episode  1200  eps 0.160  mean reward/ep    -470.4  mean PnL/ep   -1.613  coverage 50.1%
+episode  1400  eps 0.137  mean reward/ep    -394.2  mean PnL/ep   -1.408  coverage 50.1%
+episode  1600  eps 0.113  mean reward/ep    -448.3  mean PnL/ep   -1.719  coverage 50.2%
+episode  1800  eps 0.090  mean reward/ep    -352.0  mean PnL/ep   -1.191  coverage 50.2%
+episode  2000  eps 0.067  mean reward/ep    -448.0  mean PnL/ep   -1.890  coverage 50.3%
+episode  2200  eps 0.043  mean reward/ep    -387.7  mean PnL/ep   -1.610  coverage 50.3%
+episode  2400  eps 0.020  mean reward/ep    -298.1  mean PnL/ep   -1.250  coverage 50.4%
+episode  2600  eps 0.020  mean reward/ep    -338.1  mean PnL/ep   -1.560  coverage 50.4%
+episode  2800  eps 0.020  mean reward/ep    -184.2  mean PnL/ep   -0.844  coverage 50.4%
+episode  3000  eps 0.020  mean reward/ep    -388.7  mean PnL/ep   -1.729  coverage 50.4%
+saved models/DOGEUSDT.rl.bin
+DOGEUSDT: tick 1e-05, lot 1253 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 0
+train 9.00 h (266045 snapshots, 368068 trades) | test 4.85 h (128288 snapshots, 93566 trades)
+fill model A=0.153/s k=0.806/tick, sigma=0.900 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 1683 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                         -12.27    -2.53  -15.39     12.30    1310      2.89    -15.17     0.00  844.66      0%   -0.693   -0.858   -0.902
+Avellaneda-Stoikov [gamma=0.01]                   -1.14    -0.24   -0.72      2.72     279      0.33     -1.48     0.00 3018.89      2%   -0.833   -1.052   -1.034
+GLFT (mid) [gamma=0.00]                           -2.07    -0.43   -1.73      2.35     262      0.32     -2.39     0.00 2374.10      1%   -0.832   -1.057   -1.202
+GLFT (Stoikov micro-price) [gamma=0.00]           -0.22    -0.05   -0.21      1.33     136      0.37     -0.59     0.00 1469.54      0%   -0.926   -1.169   -0.632
+GLFT (HMM micro-price) [gamma=0.00]               -0.25    -0.05   -0.26      1.33     134      0.38     -0.63     0.00 1478.87      0%   -0.955   -1.179   -0.522
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=0]       0.16     0.03    0.53      1.20     145      0.10      0.07     0.00 1572.89      0%   -0.948   -1.224   -1.003
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -1.60    -0.33   -4.68      1.73     241      0.25     -1.86     0.00  562.26      0%   -0.674   -0.695   -0.322
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:     33 fills, markout10 -0.561 ticks
+  regime 1:    203 fills, markout10 -1.160 ticks
+  regime 2:     26 fills, markout10 -0.885 ticks
+DOGEUSDT: tick 1e-05, lot 1253 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 2
+train 9.00 h (266045 snapshots, 368068 trades) | test 4.85 h (128288 snapshots, 93566 trades)
+fill model A=0.153/s k=0.806/tick, sigma=0.900 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 1152 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                          -6.62    -1.37   -9.33      6.65     931      2.08     -8.70     0.00  858.43      0%   -0.694   -0.900   -0.682
+Avellaneda-Stoikov [gamma=0.01]                    0.38     0.08    0.37      2.63     184      0.55     -0.17     0.00 3130.11      2%   -0.810   -1.087   -0.793
+GLFT (mid) [gamma=0.00]                            2.12     0.44    1.78      2.45     185      0.58      1.54     0.00 2395.30      1%   -0.668   -0.965   -0.781
+GLFT (Stoikov micro-price) [gamma=0.00]            2.49     0.51    3.82      0.93      91      0.27      2.22     0.00 1308.03      0%   -0.863   -1.060   -0.302
+GLFT (HMM micro-price) [gamma=0.00]                1.37     0.28    2.62      1.53      93      0.18      1.19     0.00 1326.65      0%   -1.048   -1.253   -1.371
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=0]       0.49     0.10    0.96      1.29      82     -0.17      0.66     0.00 1169.45      0%   -1.280   -1.671   -1.415
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -0.89    -0.18   -0.73      2.21     152      0.38     -1.28     0.00 1261.40      0%   -0.612   -0.875   -0.572
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:     14 fills, markout10 -0.429 ticks
+  regime 1:    151 fills, markout10 -1.050 ticks
+  regime 2:     20 fills, markout10 -0.700 ticks
+
+Sensitivity of HMM-GLFT [gamma=0.00] on TEST:
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+queue model risk-averse                            0.55     0.11    1.07      1.29      57     -0.19      0.74     0.00 1236.42      0%   -1.360   -1.658   -1.219
+queue model proportional                           1.04     0.21    1.64      1.29      65     -0.20      1.24     0.00 1188.41      0%   -1.315   -1.623   -1.146
+queue model power2                                 0.49     0.10    0.96      1.29      82     -0.17      0.66     0.00 1169.45      0%   -1.280   -1.671   -1.415
+queue model power3                                 0.59     0.12    1.11      1.29      84     -0.14      0.74     0.00 1192.03      0%   -1.274   -1.667   -1.452
+latency 0 ms                                       0.55     0.11    1.07      1.29      60     -0.19      0.74     0.00 1236.42      0%   -1.317   -1.650   -1.083
+latency 20 ms                                      0.49     0.10    0.96      1.29      82     -0.17      0.66     0.00 1169.45      0%   -1.280   -1.671   -1.415
+latency 100 ms                                    -0.87    -0.18   -1.01      1.52      94     -0.14     -0.73     0.00 1281.21      0%   -1.117   -1.362   -1.606
+latency 300 ms                                     0.83     0.17    1.36      1.13     143     -0.22      1.04     0.00 1874.47      0%   -1.038   -0.850   -0.626
+maker fee -0.005%                                  0.81     0.17    1.41      1.28      82     -0.17      0.66    -0.32 1169.45      0%   -1.280   -1.671   -1.415
+maker fee +0.000%                                  0.49     0.10    0.96      1.29      82     -0.17      0.66     0.00 1169.45      0%   -1.280   -1.671   -1.415
+maker fee +0.020%                                 -0.77    -0.16   -0.97      1.51      82     -0.17      0.66     1.26 1169.45      0%   -1.280   -1.671   -1.415
+
+episode   200  eps 0.277  mean reward/ep    -133.3  mean PnL/ep   -0.382  coverage 43.7%
+episode   400  eps 0.253  mean reward/ep     -56.5  mean PnL/ep   -0.202  coverage 45.9%
+episode   600  eps 0.230  mean reward/ep     -80.5  mean PnL/ep   -0.363  coverage 46.1%
+episode   800  eps 0.207  mean reward/ep     -80.2  mean PnL/ep   -0.572  coverage 46.2%
+episode  1000  eps 0.183  mean reward/ep     -61.6  mean PnL/ep   -0.323  coverage 46.3%
+episode  1200  eps 0.160  mean reward/ep     -56.1  mean PnL/ep   -0.392  coverage 46.3%
+episode  1400  eps 0.137  mean reward/ep     -40.3  mean PnL/ep   -0.308  coverage 46.3%
+episode  1600  eps 0.113  mean reward/ep     -68.6  mean PnL/ep   -0.492  coverage 46.3%
+episode  1800  eps 0.090  mean reward/ep     -40.9  mean PnL/ep   -0.268  coverage 46.4%
+episode  2000  eps 0.067  mean reward/ep     -56.3  mean PnL/ep   -0.421  coverage 46.7%
+episode  2200  eps 0.043  mean reward/ep     -35.1  mean PnL/ep   -0.349  coverage 46.7%
+episode  2400  eps 0.020  mean reward/ep     -19.3  mean PnL/ep   -0.226  coverage 46.7%
+episode  2600  eps 0.020  mean reward/ep     -26.2  mean PnL/ep   -0.236  coverage 46.7%
+episode  2800  eps 0.020  mean reward/ep      -7.4  mean PnL/ep   -0.053  coverage 46.7%
+episode  3000  eps 0.020  mean reward/ep      -8.4  mean PnL/ep    0.074  coverage 46.7%
+saved models/ADAUSDT.rl.bin
+ADAUSDT: tick 0.0001, lot 450 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 0
+train 9.00 h (256004 snapshots, 161196 trades) | test 4.85 h (125083 snapshots, 49321 trades)
+fill model A=0.044/s k=1.229/tick, sigma=0.309 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 767 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                          -5.15    -1.06  -13.98      5.19     852      4.05     -9.20     0.00  222.88      0%   -0.325   -0.224   -0.167
+Avellaneda-Stoikov [gamma=0.10]                    0.45     0.09    0.52      1.71       8     -0.40      0.85     0.00  428.38      0%   -2.000   -2.250   -2.500
+GLFT (mid) [gamma=0.10]                           -0.41    -0.08   -0.87      1.24      10     -0.36     -0.05     0.00  342.99      0%   -1.700   -1.700   -2.100
+GLFT (Stoikov micro-price) [gamma=0.00]            0.83     0.17    1.42      1.58      12     -0.43      1.26     0.00  372.85      0%   -1.500   -1.667   -1.667
+GLFT (HMM micro-price) [gamma=0.00]                0.83     0.17    1.42      1.58      12     -0.43      1.26     0.00  372.85      0%   -1.500   -1.667   -1.667
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=0]       0.83     0.17    1.42      1.58      12     -0.43      1.26     0.00  372.85      0%   -1.500   -1.667   -1.667
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -1.08    -0.22   -2.25      2.00      87     -0.88     -0.20     0.00  240.77      0%   -0.626   -0.477   -0.362
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:      0 fills, markout10 +0.000 ticks
+  regime 1:      9 fills, markout10 -1.944 ticks
+  regime 2:      1 fills, markout10 +0.500 ticks
+ADAUSDT: tick 0.0001, lot 450 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 2
+train 9.00 h (256004 snapshots, 161196 trades) | test 4.85 h (125083 snapshots, 49321 trades)
+fill model A=0.044/s k=1.229/tick, sigma=0.309 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 270 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                          -3.43    -0.71   -5.77      3.47     216      1.71     -5.14     0.00  269.87      0%   -0.370   -0.255   -0.292
+Avellaneda-Stoikov [gamma=0.10]                    0.61     0.13    1.18      1.10       7     -0.16      0.76     0.00  452.31      0%   -1.643   -1.929   -2.357
+GLFT (mid) [gamma=0.10]                            0.58     0.12    1.19      0.94       8     -0.13      0.72     0.00  242.81      0%   -1.500   -1.875   -1.875
+GLFT (Stoikov micro-price) [gamma=0.01]            0.52     0.11    1.04      1.10       7     -0.25      0.76     0.00  452.31      0%   -1.929   -2.214   -2.643
+GLFT (HMM micro-price) [gamma=0.01]                0.52     0.11    1.04      1.10       7     -0.25      0.76     0.00  452.31      0%   -1.929   -2.214   -2.643
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=0]       0.61     0.13    2.38      0.70       5     -0.38      0.99     0.00  163.62      0%   -2.700   -3.100   -2.900
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -0.32    -0.06   -1.01      0.81      17     -0.49      0.18     0.00  110.82      0%   -0.971   -1.206   -1.382
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:      0 fills, markout10 +0.000 ticks
+  regime 1:      8 fills, markout10 -1.875 ticks
+  regime 2:      0 fills, markout10 +0.000 ticks
+
+Sensitivity of HMM-GLFT [gamma=0.00] on TEST:
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+queue model risk-averse                            0.43     0.09    0.57      1.71       6     -0.38      0.81     0.00  569.49      0%   -2.667   -3.000   -3.000
+queue model proportional                           0.61     0.13    2.38      0.70       9     -0.38      0.99     0.00  163.62      0%   -1.278   -1.500   -0.944
+queue model power2                                 0.61     0.13    2.38      0.70       5     -0.38      0.99     0.00  163.62      0%   -2.700   -3.100   -2.900
+queue model power3                                 0.61     0.13    2.38      0.70       7     -0.38      0.99     0.00  163.62      0%   -1.786   -2.071   -1.643
+latency 0 ms                                       0.61     0.13    2.38      0.70       5     -0.38      0.99     0.00  163.62      0%   -2.700   -3.100   -2.900
+latency 20 ms                                      0.61     0.13    2.38      0.70       5     -0.38      0.99     0.00  163.62      0%   -2.700   -3.100   -2.900
+latency 100 ms                                     0.18     0.04    0.48      0.81       6     -0.36      0.54     0.00  205.33      0%   -2.167   -2.500   -2.333
+latency 300 ms                                     0.18     0.04    0.48      0.83       7     -0.36      0.53     0.00  220.93      0%   -1.786   -2.214   -2.357
+maker fee -0.005%                                  0.63     0.13    2.45      0.69       5     -0.38      0.99    -0.02  163.62      0%   -2.700   -3.100   -2.900
+maker fee +0.000%                                  0.61     0.13    2.38      0.70       5     -0.38      0.99     0.00  163.62      0%   -2.700   -3.100   -2.900
+maker fee +0.020%                                  0.51     0.10    2.07      0.72       5     -0.38      0.99     0.10  163.62      0%   -2.700   -3.100   -2.900
+
+episode   200  eps 0.277  mean reward/ep    -951.6  mean PnL/ep   -1.919  coverage 49.5%
+episode   400  eps 0.253  mean reward/ep    -732.1  mean PnL/ep   -1.655  coverage 50.3%
+episode   600  eps 0.230  mean reward/ep    -924.3  mean PnL/ep   -2.279  coverage 50.6%
+episode   800  eps 0.207  mean reward/ep    -928.9  mean PnL/ep   -2.625  coverage 51.0%
+episode  1000  eps 0.183  mean reward/ep    -825.4  mean PnL/ep   -2.296  coverage 51.2%
+episode  1200  eps 0.160  mean reward/ep    -829.1  mean PnL/ep   -2.382  coverage 51.4%
+episode  1400  eps 0.137  mean reward/ep    -646.7  mean PnL/ep   -1.873  coverage 51.6%
+episode  1600  eps 0.113  mean reward/ep    -781.3  mean PnL/ep   -2.374  coverage 51.7%
+episode  1800  eps 0.090  mean reward/ep    -554.1  mean PnL/ep   -1.522  coverage 52.0%
+episode  2000  eps 0.067  mean reward/ep    -703.5  mean PnL/ep   -2.344  coverage 52.1%
+episode  2200  eps 0.043  mean reward/ep    -630.6  mean PnL/ep   -2.015  coverage 52.4%
+episode  2400  eps 0.020  mean reward/ep    -553.2  mean PnL/ep   -1.671  coverage 52.6%
+episode  2600  eps 0.020  mean reward/ep    -587.6  mean PnL/ep   -1.932  coverage 52.6%
+episode  2800  eps 0.020  mean reward/ep    -334.3  mean PnL/ep   -1.053  coverage 52.7%
+episode  3000  eps 0.020  mean reward/ep    -630.1  mean PnL/ep   -2.121  coverage 52.8%
+saved models/XRPUSDT.rl.bin
+XRPUSDT: tick 0.0001, lot 77 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 0
+train 9.00 h (303530 snapshots, 516215 trades) | test 4.85 h (151152 snapshots, 131886 trades)
+fill model A=0.179/s k=0.654/tick, sigma=1.245 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 2146 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                         -13.55    -2.80  -12.60     13.56    1575      1.93    -15.48     0.00   74.61      0%   -0.908   -1.278   -1.740
+Avellaneda-Stoikov [gamma=0.00]                    0.11     0.02    0.22      1.55     177      0.31     -0.20     0.00  165.89      5%   -1.308   -2.048   -3.370
+GLFT (mid) [gamma=0.00]                           -1.03    -0.21   -3.48      1.12     225      0.39     -1.42     0.00   52.89      0%   -1.264   -1.798   -2.940
+GLFT (Stoikov micro-price) [gamma=0.00]            0.93     0.19    1.17      1.75     208      0.20      0.73     0.00  113.29      0%   -1.341   -2.250   -2.327
+GLFT (HMM micro-price) [gamma=0.00]                1.03     0.21    1.29      1.68     205      0.20      0.83     0.00  117.26      1%   -1.339   -2.232   -2.329
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=3]      -1.77    -0.36   -4.24      2.67     207     -0.03     -1.74     0.00  122.69      0%   -1.413   -2.031   -3.085
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -5.08    -1.05   -4.99      5.08     504     -0.30     -4.77     0.00   57.06      0%   -1.230   -1.488   -3.018
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:     11 fills, markout10 -0.773 ticks
+  regime 1:    182 fills, markout10 -2.022 ticks
+  regime 2:     32 fills, markout10 -0.875 ticks
+XRPUSDT: tick 0.0001, lot 77 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 2
+train 9.00 h (303530 snapshots, 516215 trades) | test 4.85 h (151152 snapshots, 131886 trades)
+fill model A=0.179/s k=0.654/tick, sigma=1.245 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 1675 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                          -9.95    -2.05  -11.55      9.96    1245      1.50    -11.45     0.00   78.24      0%   -0.932   -1.330   -2.072
+Avellaneda-Stoikov [gamma=0.00]                    0.90     0.19    1.45      0.94     141      0.28      0.62     0.00  114.21      0%   -1.323   -2.472   -3.309
+GLFT (mid) [gamma=0.00]                           -0.55    -0.11   -2.99      0.87     209      0.31     -0.87     0.00   32.82      0%   -1.218   -1.945   -3.213
+GLFT (Stoikov micro-price) [gamma=0.00]            1.50     0.31    2.01      0.72     166      0.23      1.26     0.00   90.84      0%   -1.325   -2.392   -2.090
+GLFT (HMM micro-price) [gamma=0.00]                1.50     0.31    2.01      0.72     165      0.23      1.26     0.00   90.84      0%   -1.330   -2.379   -2.076
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=3]       0.43     0.09    0.57      2.07     164      0.01      0.42     0.00  113.50      0%   -1.506   -2.549   -4.159
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -3.02    -0.62   -7.44      3.03     402     -0.07     -2.95     0.00   54.66      0%   -1.139   -1.505   -2.007
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:      9 fills, markout10 -0.944 ticks
+  regime 1:    162 fills, markout10 -2.235 ticks
+  regime 2:     38 fills, markout10 -0.947 ticks
+
+Sensitivity of HMM-GLFT [gamma=0.00] on TEST:
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+queue model risk-averse                            0.08     0.02    0.10      1.92     132     -0.06      0.14     0.00  116.86      0%   -1.659   -2.144   -3.455
+queue model proportional                           0.57     0.12    0.79      2.04     138      0.03      0.54     0.00  111.49      0%   -1.594   -2.094   -3.399
+queue model power2                                 0.43     0.09    0.57      2.07     164      0.01      0.42     0.00  113.50      0%   -1.506   -2.549   -4.159
+queue model power3                                -0.02    -0.00   -0.06      1.91     177     -0.06      0.04     0.00  114.68      0%   -1.297   -2.381   -4.082
+latency 0 ms                                      -0.15    -0.03   -0.33      2.39     133     -0.07     -0.08     0.00  121.64      0%   -1.688   -2.199   -3.560
+latency 20 ms                                      0.43     0.09    0.57      2.07     164      0.01      0.42     0.00  113.50      0%   -1.506   -2.549   -4.159
+latency 100 ms                                     0.71     0.15    0.91      1.88     246      0.06      0.65     0.00  136.95      0%   -1.472   -2.134   -3.581
+latency 300 ms                                    -0.53    -0.11   -1.07      1.58     314      0.04     -0.58     0.00  125.39      0%   -1.360   -1.936   -2.099
+maker fee -0.005%                                  1.03     0.21    1.53      1.67     164      0.01      0.42    -0.61  113.50      0%   -1.506   -2.549   -4.159
+maker fee +0.000%                                  0.43     0.09    0.57      2.07     164      0.01      0.42     0.00  113.50      0%   -1.506   -2.549   -4.159
+maker fee +0.020%                                 -2.01    -0.41   -2.92      3.69     164      0.01      0.42     2.43  113.50      0%   -1.506   -2.549   -4.159
+
+episode   200  eps 0.277  mean reward/ep    -347.5  mean PnL/ep   -0.192  coverage 39.2%
+episode   400  eps 0.253  mean reward/ep    -271.5  mean PnL/ep   -0.149  coverage 41.8%
+episode   600  eps 0.230  mean reward/ep    -306.0  mean PnL/ep   -0.176  coverage 43.3%
+episode   800  eps 0.207  mean reward/ep    -351.9  mean PnL/ep   -0.218  coverage 44.0%
+episode  1000  eps 0.183  mean reward/ep    -320.7  mean PnL/ep   -0.185  coverage 44.4%
+episode  1200  eps 0.160  mean reward/ep    -294.3  mean PnL/ep   -0.180  coverage 44.8%
+episode  1400  eps 0.137  mean reward/ep    -264.0  mean PnL/ep   -0.151  coverage 45.1%
+episode  1600  eps 0.113  mean reward/ep    -302.2  mean PnL/ep   -0.182  coverage 45.3%
+episode  1800  eps 0.090  mean reward/ep    -221.8  mean PnL/ep   -0.126  coverage 45.5%
+episode  2000  eps 0.067  mean reward/ep    -271.0  mean PnL/ep   -0.192  coverage 45.7%
+episode  2200  eps 0.043  mean reward/ep    -180.8  mean PnL/ep   -0.090  coverage 45.9%
+episode  2400  eps 0.020  mean reward/ep    -199.8  mean PnL/ep   -0.116  coverage 46.1%
+episode  2600  eps 0.020  mean reward/ep    -144.7  mean PnL/ep   -0.087  coverage 46.3%
+episode  2800  eps 0.020  mean reward/ep    -113.5  mean PnL/ep   -0.084  coverage 46.3%
+episode  3000  eps 0.020  mean reward/ep    -158.8  mean PnL/ep   -0.109  coverage 46.5%
+saved models/TRXUSDT.rl.bin
+TRXUSDT: tick 1e-05, lot 299 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 0
+train 9.00 h (150428 snapshots, 52062 trades) | test 4.85 h (81090 snapshots, 19902 trades)
+fill model A=0.023/s k=0.527/tick, sigma=0.551 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 351 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                          -1.46    -0.30   -7.03      1.46     467      0.33     -1.78     0.00  349.02      0%   -1.474   -1.611   -2.309
+Avellaneda-Stoikov [gamma=1.00]                   -0.99    -0.20   -9.55      0.99     180      0.27     -1.26     0.00  164.80      0%   -2.094   -2.467   -4.544
+GLFT (mid) [gamma=0.30]                           -0.71    -0.15   -9.81      0.71     123      0.26     -0.98     0.00  172.18      0%   -2.435   -2.695   -4.142
+GLFT (Stoikov micro-price) [gamma=0.30]           -0.55    -0.11   -7.75      0.56     121      0.24     -0.79     0.00  159.59      0%   -2.806   -2.839   -2.930
+GLFT (HMM micro-price) [gamma=0.30]               -0.55    -0.11   -7.75      0.56     121      0.24     -0.79     0.00  159.59      0%   -2.806   -2.839   -2.930
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.00, guard=0]      -0.20    -0.04   -2.68      0.32     130      0.28     -0.48     0.00  238.66      0%   -3.008   -3.815   -4.269
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -0.12    -0.02   -1.34      0.22     103      0.18     -0.30     0.00  241.53      0%   -3.316   -3.529   -3.267
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:     13 fills, markout10 -2.577 ticks
+  regime 1:     93 fills, markout10 -3.048 ticks
+  regime 2:     17 fills, markout10 -0.853 ticks
+TRXUSDT: tick 1e-05, lot 299 units (~$100), max position 5 lots, latency 20 ms, queue power2, maker fee 0.0000%, keep-ticks 2
+train 9.00 h (150428 snapshots, 52062 trades) | test 4.85 h (81090 snapshots, 19902 trades)
+fill model A=0.023/s k=0.527/tick, sigma=0.551 ticks/sqrt(s)
+
+TEST split (tuned on train at >= 25% of the fixed-spread baseline's train fills, i.e. >= 312 fills):
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+fixed-spread (join best)                          -1.25    -0.26   -6.46      1.26     398      0.30     -1.56     0.00  395.08      1%   -1.774   -1.932   -2.671
+Avellaneda-Stoikov [gamma=3.00]                   -0.63    -0.13  -11.50      0.63     120      0.14     -0.77     0.00  123.72      0%   -2.392   -2.475   -5.350
+GLFT (mid) [gamma=0.30]                           -0.54    -0.11   -7.61      0.54     114      0.22     -0.76     0.00  160.21      0%   -3.140   -3.202   -4.360
+GLFT (Stoikov micro-price) [gamma=0.30]           -0.46    -0.09   -7.86      0.47     114      0.21     -0.67     0.00  130.91      0%   -2.763   -2.833   -4.430
+GLFT (HMM micro-price) [gamma=0.30]               -0.46    -0.09   -7.86      0.47     114      0.21     -0.67     0.00  130.91      0%   -2.763   -2.833   -4.430
+HMM-GLFT (micro-price + alpha + AS guard) [gamma=0.03, guard=0]      -0.39    -0.08   -5.83      0.39      98      0.31     -0.71     0.00  112.56      0%   -3.378   -3.980   -4.551
+RL (SARSA-lambda) on HMM micro-price [greedy policy]      -0.01    -0.00   -0.12      0.17      84      0.17     -0.18     0.00  273.61      0%   -3.488   -3.774   -3.167
+
+Adverse selection by HMM regime at fill time (GLFT-mid fills, mean 10s markout in ticks; negative = filled before the price moved against us):
+  regime 0:     12 fills, markout10 -3.917 ticks
+  regime 1:     83 fills, markout10 -3.488 ticks
+  regime 2:     19 fills, markout10 -1.500 ticks
+
+Sensitivity of HMM-GLFT [gamma=0.03] on TEST:
+strategy                                            PnL    PnL/h Sharpe/d     MaxDD   fills   spread$   invent$    fees$   |pos|  @limit     mo1s    mo10s    mo60s
+queue model risk-averse                           -0.39    -0.08   -5.83      0.39      86      0.31     -0.71     0.00  112.56      0%   -3.733   -4.151   -4.895
+queue model proportional                          -0.39    -0.08   -5.83      0.39     103      0.31     -0.71     0.00  112.56      0%   -3.451   -4.461   -4.267
+queue model power2                                -0.39    -0.08   -5.83      0.39      98      0.31     -0.71     0.00  112.56      0%   -3.378   -3.980   -4.551
+queue model power3                                -0.39    -0.08   -5.83      0.39     104      0.31     -0.71     0.00  112.56      0%   -3.337   -3.990   -4.673
+latency 0 ms                                      -0.25    -0.05   -4.42      0.27      93      0.31     -0.56     0.00  173.63      0%   -3.618   -3.930   -5.134
+latency 20 ms                                     -0.39    -0.08   -5.83      0.39      98      0.31     -0.71     0.00  112.56      0%   -3.378   -3.980   -4.551
+latency 100 ms                                    -0.34    -0.07   -4.76      0.39     103      0.29     -0.63     0.00  163.76      0%   -3.267   -3.985   -4.597
+latency 300 ms                                    -0.41    -0.09   -5.43      0.41     110      0.25     -0.66     0.00  117.66      0%   -3.191   -4.000   -5.400
+maker fee -0.005%                                 -0.08    -0.02   -1.46      0.17      98      0.31     -0.71    -0.31  112.56      0%   -3.378   -3.980   -4.551
+maker fee +0.000%                                 -0.39    -0.08   -5.83      0.39      98      0.31     -0.71     0.00  112.56      0%   -3.378   -3.980   -4.551
+maker fee +0.020%                                 -1.65    -0.34   -9.31      1.65      98      0.31     -0.71     1.26  112.56      0%   -3.378   -3.980   -4.551
+
