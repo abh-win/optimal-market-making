@@ -1,0 +1,16 @@
+episode   200  eps 0.277  mean reward/ep    -951.6  mean PnL/ep   -1.919  coverage 49.5%
+episode   400  eps 0.253  mean reward/ep    -732.1  mean PnL/ep   -1.655  coverage 50.3%
+episode   600  eps 0.230  mean reward/ep    -924.3  mean PnL/ep   -2.279  coverage 50.6%
+episode   800  eps 0.207  mean reward/ep    -928.9  mean PnL/ep   -2.625  coverage 51.0%
+episode  1000  eps 0.183  mean reward/ep    -825.4  mean PnL/ep   -2.296  coverage 51.2%
+episode  1200  eps 0.160  mean reward/ep    -829.1  mean PnL/ep   -2.382  coverage 51.4%
+episode  1400  eps 0.137  mean reward/ep    -646.7  mean PnL/ep   -1.873  coverage 51.6%
+episode  1600  eps 0.113  mean reward/ep    -781.3  mean PnL/ep   -2.374  coverage 51.7%
+episode  1800  eps 0.090  mean reward/ep    -554.1  mean PnL/ep   -1.522  coverage 52.0%
+episode  2000  eps 0.067  mean reward/ep    -703.5  mean PnL/ep   -2.344  coverage 52.1%
+episode  2200  eps 0.043  mean reward/ep    -630.6  mean PnL/ep   -2.015  coverage 52.4%
+episode  2400  eps 0.020  mean reward/ep    -553.2  mean PnL/ep   -1.671  coverage 52.6%
+episode  2600  eps 0.020  mean reward/ep    -587.6  mean PnL/ep   -1.932  coverage 52.6%
+episode  2800  eps 0.020  mean reward/ep    -334.3  mean PnL/ep   -1.053  coverage 52.7%
+episode  3000  eps 0.020  mean reward/ep    -630.1  mean PnL/ep   -2.121  coverage 52.8%
+saved models/XRPUSDT.rl.bin
