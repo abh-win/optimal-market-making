@@ -1,0 +1,8 @@
+symbol,strategy,params,pnl,pnl_per_hour,sharpe_daily,max_drawdown,fills,volume,spread_capture,inventory_pnl,fees,mean_abs_position,time_at_limit,markout_1s,markout_10s,markout_60s,quote_updates,lot,tick
+ADAUSDT,"fixed-spread (join best)","",-3.42984,-0.707462,-5.766,3.47484,216,70915.5,1.71456,-5.1444,0,269.87,0,-0.37037,-0.25463,-0.291667,438,450,0.0001
+ADAUSDT,"Avellaneda-Stoikov","gamma=0.10",0.6075,0.125307,1.18201,1.1025,7,3150,-0.1575,0.765,0,452.309,0,-1.64286,-1.92857,-2.35714,352,450,0.0001
+ADAUSDT,"GLFT (mid)","gamma=0.10",0.585,0.120666,1.19016,0.945,8,3600,-0.135,0.72,0,242.811,0,-1.5,-1.875,-1.875,350,450,0.0001
+ADAUSDT,"GLFT (Stoikov micro-price)","gamma=0.01",0.5175,0.106743,1.03514,1.1025,7,3150,-0.2475,0.765,0,452.309,0,-1.92857,-2.21429,-2.64286,389,450,0.0001
+ADAUSDT,"GLFT (HMM micro-price)","gamma=0.01",0.5175,0.106743,1.03514,1.1025,7,3150,-0.2475,0.765,0,452.309,0,-1.92857,-2.21429,-2.64286,401,450,0.0001
+ADAUSDT,"HMM-GLFT (micro-price + alpha + AS guard)","gamma=0.00, guard=0",0.6075,0.125307,2.37966,0.6975,5,2250,-0.3825,0.99,0,163.623,0,-2.7,-3.1,-2.9,437,450,0.0001
+ADAUSDT,"RL (SARSA-lambda) on HMM micro-price","greedy policy",-0.315,-0.064974,-1.01222,0.81,17,7200,-0.495,0.18,0,110.821,0,-0.970588,-1.20588,-1.38235,1706,450,0.0001

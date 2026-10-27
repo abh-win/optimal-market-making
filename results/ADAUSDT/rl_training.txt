@@ -1,0 +1,16 @@
+episode   200  eps 0.277  mean reward/ep    -133.3  mean PnL/ep   -0.382  coverage 43.7%
+episode   400  eps 0.253  mean reward/ep     -56.5  mean PnL/ep   -0.202  coverage 45.9%
+episode   600  eps 0.230  mean reward/ep     -80.5  mean PnL/ep   -0.363  coverage 46.1%
+episode   800  eps 0.207  mean reward/ep     -80.2  mean PnL/ep   -0.572  coverage 46.2%
+episode  1000  eps 0.183  mean reward/ep     -61.6  mean PnL/ep   -0.323  coverage 46.3%
+episode  1200  eps 0.160  mean reward/ep     -56.1  mean PnL/ep   -0.392  coverage 46.3%
+episode  1400  eps 0.137  mean reward/ep     -40.3  mean PnL/ep   -0.308  coverage 46.3%
+episode  1600  eps 0.113  mean reward/ep     -68.6  mean PnL/ep   -0.492  coverage 46.3%
+episode  1800  eps 0.090  mean reward/ep     -40.9  mean PnL/ep   -0.268  coverage 46.4%
+episode  2000  eps 0.067  mean reward/ep     -56.3  mean PnL/ep   -0.421  coverage 46.7%
+episode  2200  eps 0.043  mean reward/ep     -35.1  mean PnL/ep   -0.349  coverage 46.7%
+episode  2400  eps 0.020  mean reward/ep     -19.3  mean PnL/ep   -0.226  coverage 46.7%
+episode  2600  eps 0.020  mean reward/ep     -26.2  mean PnL/ep   -0.236  coverage 46.7%
+episode  2800  eps 0.020  mean reward/ep      -7.4  mean PnL/ep   -0.053  coverage 46.7%
+episode  3000  eps 0.020  mean reward/ep      -8.4  mean PnL/ep    0.074  coverage 46.7%
+saved models/ADAUSDT.rl.bin
