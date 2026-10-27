@@ -1,0 +1,16 @@
+episode   200  eps 0.277  mean reward/ep    -347.5  mean PnL/ep   -0.192  coverage 39.2%
+episode   400  eps 0.253  mean reward/ep    -271.5  mean PnL/ep   -0.149  coverage 41.8%
+episode   600  eps 0.230  mean reward/ep    -306.0  mean PnL/ep   -0.176  coverage 43.3%
+episode   800  eps 0.207  mean reward/ep    -351.9  mean PnL/ep   -0.218  coverage 44.0%
+episode  1000  eps 0.183  mean reward/ep    -320.7  mean PnL/ep   -0.185  coverage 44.4%
+episode  1200  eps 0.160  mean reward/ep    -294.3  mean PnL/ep   -0.180  coverage 44.8%
+episode  1400  eps 0.137  mean reward/ep    -264.0  mean PnL/ep   -0.151  coverage 45.1%
+episode  1600  eps 0.113  mean reward/ep    -302.2  mean PnL/ep   -0.182  coverage 45.3%
+episode  1800  eps 0.090  mean reward/ep    -221.8  mean PnL/ep   -0.126  coverage 45.5%
+episode  2000  eps 0.067  mean reward/ep    -271.0  mean PnL/ep   -0.192  coverage 45.7%
+episode  2200  eps 0.043  mean reward/ep    -180.8  mean PnL/ep   -0.090  coverage 45.9%
+episode  2400  eps 0.020  mean reward/ep    -199.8  mean PnL/ep   -0.116  coverage 46.1%
+episode  2600  eps 0.020  mean reward/ep    -144.7  mean PnL/ep   -0.087  coverage 46.3%
+episode  2800  eps 0.020  mean reward/ep    -113.5  mean PnL/ep   -0.084  coverage 46.3%
+episode  3000  eps 0.020  mean reward/ep    -158.8  mean PnL/ep   -0.109  coverage 46.5%
+saved models/TRXUSDT.rl.bin
