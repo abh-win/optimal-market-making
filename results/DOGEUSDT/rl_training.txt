@@ -1,0 +1,16 @@
+episode   200  eps 0.277  mean reward/ep    -563.7  mean PnL/ep   -1.165  coverage 49.9%
+episode   400  eps 0.253  mean reward/ep    -452.9  mean PnL/ep   -1.096  coverage 50.1%
+episode   600  eps 0.230  mean reward/ep    -545.8  mean PnL/ep   -1.593  coverage 50.1%
+episode   800  eps 0.207  mean reward/ep    -553.4  mean PnL/ep   -1.938  coverage 50.1%
+episode  1000  eps 0.183  mean reward/ep    -452.2  mean PnL/ep   -1.502  coverage 50.1%
+episode  1200  eps 0.160  mean reward/ep    -470.4  mean PnL/ep   -1.613  coverage 50.1%
+episode  1400  eps 0.137  mean reward/ep    -394.2  mean PnL/ep   -1.408  coverage 50.1%
+episode  1600  eps 0.113  mean reward/ep    -448.3  mean PnL/ep   -1.719  coverage 50.2%
+episode  1800  eps 0.090  mean reward/ep    -352.0  mean PnL/ep   -1.191  coverage 50.2%
+episode  2000  eps 0.067  mean reward/ep    -448.0  mean PnL/ep   -1.890  coverage 50.3%
+episode  2200  eps 0.043  mean reward/ep    -387.7  mean PnL/ep   -1.610  coverage 50.3%
+episode  2400  eps 0.020  mean reward/ep    -298.1  mean PnL/ep   -1.250  coverage 50.4%
+episode  2600  eps 0.020  mean reward/ep    -338.1  mean PnL/ep   -1.560  coverage 50.4%
+episode  2800  eps 0.020  mean reward/ep    -184.2  mean PnL/ep   -0.844  coverage 50.4%
+episode  3000  eps 0.020  mean reward/ep    -388.7  mean PnL/ep   -1.729  coverage 50.4%
+saved models/DOGEUSDT.rl.bin
